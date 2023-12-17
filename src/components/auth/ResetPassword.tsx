@@ -29,7 +29,7 @@ export default function ResetPassword() {
   const resetPassword = async () => {
     setLoading(true);
 
-    if (formData.email === 'harshalraikwar07@gmail.co') {
+    if (formData.email === 'harshalraikwar07@gmail.com') {
       // @ts-ignore
       setErrorMsg("Reset Password is disabled for this email.");
       setLoading(false);

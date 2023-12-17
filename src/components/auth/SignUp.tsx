@@ -48,7 +48,7 @@ export default function SignUp() {
       ...restFormData,
       password,
       options: {
-        emailRedirectTo: `${window.location.origin}/auth-callback?origin=escape-rooms`,
+        emailRedirectTo: `${window.location.origin}/auth-callback?origin=link`,
       },
     });
 
@@ -72,6 +72,16 @@ export default function SignUp() {
               <div className='my-4'>
                 <div className='flex flex-row items-center justify-start space-x-2'>
                   <h1 className='font-bold text-3xl'>Sign Up</h1>
+                  <TooltipProvider>
+                    <Tooltip delayDuration={300}>
+                      <TooltipTrigger><BadgeInfo size={24} /></TooltipTrigger>
+                      <TooltipContent>
+                        <h1>Use below credentials for login if you don&apos;t wish to create new account</h1>
+                        <p><b>Email:</b> harshalraikwar07@gmail.com</p>
+                        <p><b>Password:</b> harshal_1234</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
                 </div>
                 <div className='mt-4'>
                   Already have an account? <span className='text-primary'><Link href='/log-in' passHref> Log In </Link></span>
