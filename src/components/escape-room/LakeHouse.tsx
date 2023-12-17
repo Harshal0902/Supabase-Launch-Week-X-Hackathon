@@ -22,7 +22,7 @@ export default function LakeHouse({ userId }: { userId: string }) {
     const toggleRiddleOpen = () => setRiddleOpen((prev) => !prev)
 
     const user_id = userId
-    const room_id = 'escape_room#Lake_House'
+    const room_id = 'Lake House'
 
     useEffect(() => {
         if (isRiddleOpen) {
@@ -241,7 +241,7 @@ export default function LakeHouse({ userId }: { userId: string }) {
 
             <div className='bg-[#020817] p-2 border-2 border-accent rounded-md mx-4 md:mx-36 my-4'>
                 {/* @ts-ignore */}
-                <model-viewer src="/models/house.glb"
+                <model-viewer src="https://edroxdhjlwdlgziukadr.supabase.co/storage/v1/object/sign/models/house.glb?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJtb2RlbHMvaG91c2UuZ2xiIiwiaWF0IjoxNzAyODc4ODgyLCJleHAiOjE3MzQ0MTQ4ODJ9.t-eW7h_RUP9elUIrVe_NErsUBql4pQ_6ss7Vh4frjNk&t=2023-12-18T05%3A54%3A42.508Z"
                     quick-look-browsers='safari chrome'
                     camera-controls ar ar-modes='webxr scene-viewer quick-look'
                     shadow-intensity='1' shadowSoftness='1' exposure='1' ar-placement='floor'

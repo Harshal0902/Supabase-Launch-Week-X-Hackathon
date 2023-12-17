@@ -1,10 +1,12 @@
+"use client"
+
 import React from 'react'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 
 export default function Page() {
+  console.log('I\'m a text file in the digital maze, Hidden clues within, a secret phase. Crawlers seek, but can they find On the web\'s path, a challenge designed. What am I?')
+
   return (
     <MaxWidthWrapper>
       <div className='flex flex-wrap-reverse items-center justify-center md:grid md:grid-cols-2 pb-8'>

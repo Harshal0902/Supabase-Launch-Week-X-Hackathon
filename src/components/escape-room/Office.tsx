@@ -22,7 +22,7 @@ export default function Office({ userId }: { userId: string }) {
     const toggleRiddleOpen = () => setRiddleOpen((prev) => !prev)
 
     const user_id = userId
-    const room_id = 'escape_room#Office'
+    const room_id = 'Office'
 
     useEffect(() => {
         if (isRiddleOpen) {
@@ -241,7 +241,7 @@ export default function Office({ userId }: { userId: string }) {
 
             <div className='bg-[#020817] p-2 border-2 border-accent rounded-md mx-4 md:mx-36 my-4'>
                 {/* @ts-ignore */}
-                <model-viewer src="/models/isometric_office.glb"
+                <model-viewer src="https://edroxdhjlwdlgziukadr.supabase.co/storage/v1/object/sign/models/isometric_office.glb?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJtb2RlbHMvaXNvbWV0cmljX29mZmljZS5nbGIiLCJpYXQiOjE3MDI4NzkwODUsImV4cCI6MTczNDQxNTA4NX0.krJrOpo-mluzXkVVePJ_FcFiILcHCW3g2HWxfo_sFT8&t=2023-12-18T05%3A58%3A05.820Z"
                     quick-look-browsers='safari chrome'
                     camera-controls ar ar-modes='webxr scene-viewer quick-look'
                     shadow-intensity='1' shadowSoftness='1' exposure='1' ar-placement='floor'

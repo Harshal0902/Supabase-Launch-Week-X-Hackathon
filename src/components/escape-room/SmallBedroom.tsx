@@ -241,7 +241,7 @@ export default function SmallBedroom({ userId }: { userId: string }) {
 
             <div className='bg-[#020817] p-2 border-2 border-accent rounded-md mx-4 md:mx-36 my-4'>
                 {/* @ts-ignore */}
-                <model-viewer src="/models/small_modern_bedroom.glb"
+                <model-viewer src="https://edroxdhjlwdlgziukadr.supabase.co/storage/v1/object/sign/models/small_modern_bedroom.glb?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJtb2RlbHMvc21hbGxfbW9kZXJuX2JlZHJvb20uZ2xiIiwiaWF0IjoxNzAyODc5MTYxLCJleHAiOjE3MzQ0MTUxNjF9.pHjddwkKEB9hFnTBP6NiMYsWWkHfWd1g9TdmgkqJp9U&t=2023-12-18T05%3A59%3A21.224Z"
                     quick-look-browsers='safari chrome'
                     camera-controls ar ar-modes='webxr scene-viewer quick-look'
                     shadow-intensity='1' shadowSoftness='1' exposure='1' ar-placement='floor'

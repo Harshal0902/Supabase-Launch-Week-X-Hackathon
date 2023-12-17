@@ -95,6 +95,24 @@ export const updateUserProfile = async (userId: string, updates: Partial<any>) =
     }
 };
 
+export const updateUserScoreProfile = async (userId: string, updates: Partial<any>) => {
+    try {
+        const { data, error } = await supabase
+            .from('users_score')
+            .update(updates)
+            .eq('user_id', userId);
+
+        if (error) {
+            console.error('Error updating user profile:', error);
+        }
+
+        return data;
+    } catch (error) {
+        console.error('Error updating user profile:', error);
+        return null;
+    }
+};
+
 export const insertScore = async (
     userId: string,
     completedIn: number,

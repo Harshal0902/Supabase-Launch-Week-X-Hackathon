@@ -241,7 +241,7 @@ export default function PentHouse({ userId }: { userId: string }) {
 
             <div className='bg-[#020817] p-2 border-2 border-accent rounded-md mx-4 md:mx-36 my-4'>
                 {/* @ts-ignore */}
-                <model-viewer src="/models/sanzio_predio_humanizada.glb"
+                <model-viewer src="https://edroxdhjlwdlgziukadr.supabase.co/storage/v1/object/sign/models/sanzio_predio_humanizada.glb?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJtb2RlbHMvc2FuemlvX3ByZWRpb19odW1hbml6YWRhLmdsYiIsImlhdCI6MTcwMjg3OTEzMiwiZXhwIjoxNzM0NDE1MTMyfQ.tDAh1WrPMfa3f57EheNLS23g_QTEJzXohggfrSCdUd0&t=2023-12-18T05%3A58%3A52.198Z"
                     quick-look-browsers='safari chrome'
                     camera-controls ar ar-modes='webxr scene-viewer quick-look'
                     shadow-intensity='1' shadowSoftness='1' exposure='1' ar-placement='floor'
