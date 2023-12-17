@@ -1,0 +1,11 @@
+Model Information:
+* title:	Apartment
+* source:	https://sketchfab.com/3d-models/apartment-41f07b8812ca4b83b5fc62de1cb0ad0a
+* author:	Leon (https://sketchfab.com/leonrad)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Apartment" (https://sketchfab.com/3d-models/apartment-41f07b8812ca4b83b5fc62de1cb0ad0a) by Leon (https://sketchfab.com/leonrad) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

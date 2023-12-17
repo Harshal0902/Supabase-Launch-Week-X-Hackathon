@@ -1,1 +1,1 @@
-# Supabase-Launch-Week-X-Hackathon
+# EnigmaEscape
