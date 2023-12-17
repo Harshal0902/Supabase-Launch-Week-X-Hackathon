@@ -62,8 +62,16 @@ export default function PentHouse({ userId }: { userId: string }) {
             "A coffee table",
             "A fireplace"
         ];
+        // const earnedPoints = userAnswers.reduce((total, answer, index) => {
+        //     return total + (answer.toLowerCase() === correctAnswers[index].toLowerCase() ? 10 : 0);
+        // }, 0);
+
         const earnedPoints = userAnswers.reduce((total, answer, index) => {
-            return total + (answer.toLowerCase() === correctAnswers[index].toLowerCase() ? 10 : 0);
+            if (answer && correctAnswers[index]) {
+                return total + (answer.toLowerCase() === correctAnswers[index].toLowerCase() ? 10 : 0);
+            } else {
+                return total;
+            }
         }, 0);
 
         const complete_time = timer / 100;
