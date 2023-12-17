@@ -32,7 +32,7 @@ export default function Page() {
                 if (response instanceof Response) {
                     console.error('Error:', response.statusText);
                 } else {
-                    console.log('User added successfully');
+                    // console.log('User added successfully');
                 }
 
                 router.push('/escape-rooms');

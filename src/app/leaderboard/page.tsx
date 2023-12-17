@@ -1,10 +1,9 @@
 import { createServerClient, type CookieOptions } from '@supabase/ssr'
 import { cookies } from 'next/headers'
-import { redirect } from 'next/navigation'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
-import Profile from '@/components/Profile'
+import Leaderboard from '@/components/Leaderboard'
 
-export default async function Page() {
+export default async function page() {
     const cookieStore = cookies()
 
     const supabase = createServerClient(
@@ -23,16 +22,11 @@ export default async function Page() {
         data: { user },
     } = await supabase.auth.getUser();
 
-    if (!user) {
-        redirect('/log-in');
-    }
-
-    const userId = `user_${user.id}`;
+    const userId = user ? `user_${user.id}` : null;
 
     return (
         <MaxWidthWrapper>
-            {/* @ts-ignore */}
-            <Profile userId={userId} />
+            <Leaderboard userId={userId} />
         </MaxWidthWrapper>
     )
 }

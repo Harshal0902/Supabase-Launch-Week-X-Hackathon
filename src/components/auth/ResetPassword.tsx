@@ -70,7 +70,7 @@ export default function ResetPassword() {
                       <div className='w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center'><Mail height={20} width={20} /></div>
                       <Input type='email' name='email' value={formData.email} onChange={handleChange} className='w-full -ml-10 pl-10 pr-3 py-2' required placeholder='Your Email' />
                     </div>
-                    <p className='text-[0.8rem] py-1 tracking-wide'>Reset Password disabled for email: harshalraikwar07@gmail.com</p>
+                    {/* <p className='text-[0.8rem] py-1 tracking-wide'>Reset Password disabled for email: harshalraikwar07@gmail.com</p> */}
                     {errorMsg && <div className='text-red-600'>{errorMsg}</div>}
                   </div>
                 </div>

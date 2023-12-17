@@ -2,9 +2,10 @@ import { createServerClient, type CookieOptions } from '@supabase/ssr'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 import MaxWidthWrapper from '@/components/MaxWidthWrapper'
-import Profile from '@/components/Profile'
+import LakeHouse from '@/components/escape-room/LakeHouse'
 
 export default async function Page() {
+
     const cookieStore = cookies()
 
     const supabase = createServerClient(
@@ -31,8 +32,7 @@ export default async function Page() {
 
     return (
         <MaxWidthWrapper>
-            {/* @ts-ignore */}
-            <Profile userId={userId} />
+            <LakeHouse userId={userId} />
         </MaxWidthWrapper>
     )
 }
